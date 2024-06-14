@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --blue: #0051ff;
+  --blue-50-opc: #0051ff7a;
+  --yellow: #ffd000;
+  --gray: #eeeeee;
+}
+
+* {
+  font-family: "Outfit";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+.watermark-logo {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 78px;
+  height: 78px;
+  border-radius: 100%;
+  padding: 6px;
+  backdrop-filter: blur(3px);
+  background-color: var(--blue-50-opc);
+}
+.watermark-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+
+}
+
+.carroussel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  height: 450px;
+  /* padding: 6px; */
+  border-radius: 12px;
+  background-color: var(--blue);
+}
+
+.item-carroussel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  background-image: url(https://s.zst.com.br/cms-assets/2021/12/melhor-placa-de-v-deo-barata.webp);
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.item-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(3px);
+  background-color: var(--blue-50-opc);
+}
+
+.item-infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.title-item {
+  color: rgb(255, 208, 0);
+}
+
+.img-carroussel {
+  width: 100%;
+  border-radius: 12px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue);
+  background-color: var(--yellow);
+  border-radius: 12px;
+}
+button:hover {
+  cursor: pointer;
+  color: var(--yellow);
+  outline: dotted 2px var(--yellow);
+  background-color: transparent;
+}
+.btn-control {
+  width: 42px;
+  height: 100%;
+}
+.btn-view {
+  width: 100%;
+}
+
+.controls-carroussel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  width: 100%;
+}
+
+.dot-control {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  outline: solid 2px var(--yellow);
+}
+
+.dot-control:hover {
+  background-color: var(--yellow);
+  outline: none;
+}
+
+.dot-control.--active {
+  transform: scale(1.5);
+  outline: none;
+  background-color: var(--yellow);
+}
